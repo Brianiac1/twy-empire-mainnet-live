@@ -3,7 +3,7 @@ import { ethers } from "ethers";
 import abi from "../presaleABI.json";
 
 const PRESALE_ADDRESS = "0xC4259173a89D280385F5421dC9dB0B1ff11Fe6b1";
-const USDC_ADDRESS = "0xd354E74D9E6AaA6064f661f8D2D4bD20674b241a";
+const USDC_ADDRESS = "0xd9AA94FF7C3B5FB3f36473C55504FF63f204A4D8";
 
 export default function Home() {
   const [wallet, setWallet] = useState(null);
@@ -82,7 +82,7 @@ export default function Home() {
     <div style={{ backgroundColor: 'black', color: 'gold', minHeight: '100vh', padding: '2rem', textAlign: 'center' }}>
       <img src="/token.png" alt="$TWY" style={{ width: 180, marginBottom: '1.5rem' }} />
       <h1>$TWY Web3 Empire</h1>
-      <p>Tier 1: 0.002 USDC | Tier 2: 0.004 | Tier 3: 0.005</p>
+      <p>Presale Pricing: Tier 1 = 0.002 USDC, Tier 2 = 0.004, Tier 3 = 0.005</p>
       <button onClick={connectWallet} style={{ padding: '12px 24px', marginTop: '1.5rem' }}>Connect Wallet</button>
       {wallet && (
         <>
